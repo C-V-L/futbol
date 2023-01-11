@@ -1,6 +1,6 @@
 require 'csv'
 require_relative 'stats'
-require_relative 'modules'
+require_relative 'sortable'
 require_relative 'game_stats'
 require_relative 'league_stats'
 require_relative 'season_stats'

@@ -1,4 +1,4 @@
-require './lib/modules'
+require './lib/sortable'
 
 class TeamStats
   include Sortable
