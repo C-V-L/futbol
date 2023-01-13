@@ -97,9 +97,14 @@ To obtain best/worst season, we created a method that would calculate each seaso
 ![Integration Test](https://user-images.githubusercontent.com/88596340/211881474-1022454d-c0ea-416b-9600-ec9db19ba925.png)
 In order to do this we needed to use game data organized by season. However, this data list referenced the games data which does not provide a "win"/"loss" result. To gather that data without needing to iterate against another CSV file, we build a method that would compare goal totals for the away/home team and produce a win/loss result for that team id and then calcuate a win/loss percentage for that game list. Ultimately, this complex integration results in the best/worst season methods outputing correctly while only using one CSV data file.
 
-## Wins & Challenges
-1. There were a few challenges that came with a couple of the statistics, such as, Favorite Opponent/Rival and Winningest/Coach. Having to cross reference multiple CSV files to find the correct result and finding what our test should expect before coding our method were among those contenders but in the end, it felt like a win when it was accomplished.
-1. During iteration 3, we found that memoization of some of helper methods optimized our program ten fold. It felt like a big achievement to see it working in under a second.
+## Axel De La Guardia
+### Most Challenging Aspect
+
+There were a few challenges that came with a couple of the statistics, such as, Favorite Opponent/Rival and Winningest/Coach. Having to cross reference multiple CSV files to find the correct result and finding what our test should expect before coding our method were among those contenders. From my experience, the bigger challenge is implementing new information, such as Inheritance and Modules, due to not having any real practice. With that being said, implementing them in our project is the practice and feels like a big win when we got it to work.
+
+### Most Exciting Aspect
+
+During iteration 3, we found that using memoization to cache the data frequently used, like making hashes to sort through specific data, optimized our program ten fold. Currently when we run our spec harness we get it completed in a little under half a second. Fortunately, we implemented this early on and never had to experience long wait times!
 
 ## Future Iterations
 1. Adding a feature that allows this program to run without hitting a pry.

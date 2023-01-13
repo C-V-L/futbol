@@ -13,8 +13,8 @@ module Sortable
 	end
 
 	def games_by_team_id
-		@games_by_team_id ||= game_teams.group_by do |row|
-			row.info[:team_id] 
+		@games_by_team_id ||= game_teams.group_by do |game_team|
+			game_team.info[:team_id] 
 		end
 	end
 
